@@ -6,14 +6,15 @@ import java.util.Scanner;
 
 public class MenuOpciones {
     public static int menu(Scanner consola){
-        System.out.println("|-------------------------|"+"\n"+
-                           "|  Aplicación calculadora |"+"\n"+
-                           "|-------------------------|"+"\n"+
-                           "|  [1] - SUMA             |"+"\n"+
-                           "|  [2] - RESTA            |"+"\n"+
-                           "|  [3] - MULTIPLICACIÓN   |"+"\n"+
-                           "|  [4] - DIVISIÓN         |"+"\n"+
-                           "|-------------------------|"+"\n");
+        System.out.print("|-------------------------|"+"\n"+
+                         "|  Aplicación calculadora |"+"\n"+
+                         "|-------------------------|"+"\n"+
+                         "|  [1] - SUMA             |"+"\n"+
+                         "|  [2] - RESTA            |"+"\n"+
+                         "|  [3] - MULTIPLICACIÓN   |"+"\n"+
+                         "|  [4] - DIVISIÓN         |"+"\n"+
+                         "|  [5] - SALIR            |"+"\n"+
+                         "|-------------------------|"+"\n");
         System.out.print("| Ingrese una opción =>\s");
         return Integer.parseInt(consola.nextLine());
     }
