@@ -8,12 +8,20 @@ public class ControladorOpciones {
             case 1 -> {
 
             }
+            case 2 -> {
+
+            }
+            case 3 -> {
+
+            }
+            case 4 -> {
+
+            }
             case 5 -> {
                 return true;
             }
-            default -> {
+            default ->
                 System.out.println("La opción ingresada esta fuera del menú: "+opcion);
-            }
         }
         return false;
     }

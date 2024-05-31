@@ -5,6 +5,11 @@ siguientes puntos:
 - [x] Buenas bases en matemáticas.
 - [x] Buenos fundamentos de programación.
 
+## ¿Qué practicas implementaré en este proyecto?
+- [x] ***Clean Code***: para un código limpio
+- [x] ***Estructura MVC***: para asignar responsabilidades en capas.
+- [x] ***Principio de Modularidad***: designar tareas o responsabilidades en clases y capas.
+
 ## ¿En qué consiste la aplicación a desarrollar?
 - Permitirá al usuario realizar operaciones matemáticas básicas como:
   - [x] SUMAR
@@ -19,7 +24,7 @@ Se aplicarán conceptos fundamentales con java tales como:
 - [x] Creación de variables.
 - [x] Manejo de operadores.
 - [x] Condicionales como ***if/else y switch***.
-- [x] Manejo de ciclos como ***for y while***.
+- [x] Manejo de ciclos como ***forEach y while***.
 - [x] Uso de funciones para separar responsabilidades.
 
 ## ¿Cómo se visualizará la aplicación?
