@@ -29,4 +29,14 @@ public class MenuOpciones {
         operadores.add(operadorB);
         return operadores;
     }
+
+    public static void mensajeRespuesta(int opcion, Integer respuesta){
+        switch (opcion){
+            case 1 -> System.out.println("La suma de los valores es: "+respuesta);
+            case 2 -> System.out.println("La resta de los valores es: "+respuesta);
+            case 3 -> System.out.println("La multiplicación de los valores es: "+respuesta);
+            case 4 -> System.out.println("La division de los valores es: "+respuesta);
+            default -> System.out.println("Respuesta fuera de opción");
+        }
+    }
 }

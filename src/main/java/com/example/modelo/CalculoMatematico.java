@@ -3,9 +3,11 @@ package com.example.modelo;
 import java.util.List;
 
 public class CalculoMatematico implements OperacionesMatematicas{
+
     protected int resultado = 0;
+
     @Override
-    public int suma(List<Integer> valores) {
+    public  int suma(List<Integer> valores) {
         for (int valor : valores) {
             resultado += valor;
         }
@@ -29,7 +31,7 @@ public class CalculoMatematico implements OperacionesMatematicas{
     }
 
     @Override
-    public double division(List<Integer> valores) {
+    public int division(List<Integer> valores) {
         for (int valor : valores) {
             if(valor != 0){
                 resultado /= valor;

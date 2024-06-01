@@ -10,6 +10,6 @@ public interface OperacionesMatematicas {
 
     int multiplicacion(List<Integer> valores);
 
-    double division(List<Integer> valores);
+    int division(List<Integer> valores);
 
 }
