@@ -12,4 +12,12 @@ public interface OperacionesMatematicas {
 
     int division(List<Integer> valores);
 
+    double sumaDecimal(List<Double> valores);
+
+    double restaDecimal(List<Double> valores);
+
+    double multiplicacionDecimal(List<Double> valores);
+
+    double divisionDecimal(List<Double> valores);
+
 }
