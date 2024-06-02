@@ -24,19 +24,30 @@ public class MenuOpciones {
         System.out.print("|-------------------------|"+"\n"+
                          "| OPCIÓN TIPO OPERADORES  |"+"\n"+
                          "|-------------------------|"+"\n"+
-                         "|   [1] - ENTEROS         |"+"\n"+
-                         "|   [2] - DECIMALES       |"+"\n"+
+                         "| [1] - ENTEROS           |"+"\n"+
+                         "| [2] - DECIMALES / AMBOS |"+"\n"+
                          "|-------------------------|"+"\n");
         System.out.print("| Ingrese una opción =>\s");
         return Integer.parseInt(consola.nextLine());
     }
 
-    public static List<Integer> valoresAB(Scanner consola){
+    public static List<Integer> valoresABEnteros(Scanner consola){
         List<Integer> operadores = new ArrayList<>();
         System.out.print("Proporciona valor operando 1: ");
         var operadorA = Integer.parseInt(consola.nextLine());
         System.out.print("Proporciona valor operando 2: ");
         var operadorB = Integer.parseInt(consola.nextLine());
+        operadores.add(operadorA);
+        operadores.add(operadorB);
+        return operadores;
+    }
+
+    public static List<Double> valoresABDecimales(Scanner consola){
+        List<Double> operadores = new ArrayList<>();
+        System.out.print("Proporciona valor operando 1: ");
+        var operadorA = Double.parseDouble(consola.nextLine());
+        System.out.print("Proporciona valor operando 2: ");
+        var operadorB = Double.parseDouble(consola.nextLine());
         operadores.add(operadorA);
         operadores.add(operadorB);
         return operadores;

@@ -1,7 +1,7 @@
 package com.example.calculadoraapp;
 
 import java.util.Scanner;
-import static com.example.controlador.ControladorOpciones.opcionOperacion;
+import static com.example.controlador.ControladorOpciones.*;
 import static com.example.vista.MenuOpciones.*;
 
 public class CalculadoraApp {
@@ -14,7 +14,11 @@ public class CalculadoraApp {
             try{
                 var opcion = menu(consola);
                 var tipo = opcionEnteroDecimal(consola);
-                salir = opcionOperacion(opcion, tipo, consola);
+                if(tipo == 1){
+                    salir = opcionOperacionEntera(opcion, consola);
+                }else{
+                    salir = opcionOperacionDecimal(opcion, consola);
+                }
             }catch (Exception e){
                 System.out.println("Error al digitar una opción fuera del menú: "+e.getMessage());
             }
