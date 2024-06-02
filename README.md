@@ -6,9 +6,19 @@ siguientes puntos:
 - [x] Buenos fundamentos de programación.
 
 ## ¿Qué practicas implementaré en este proyecto?
-- [x] ***Clean Code***: para un código limpio
-- [x] ***Estructura MVC***: para asignar responsabilidades en capas.
-- [x] ***Principio de Modularidad***: designar tareas o responsabilidades en clases y capas.
+- [x] ***Clean Code***
+  - Para un código limpio.
+  - Seguir las convenciones de nomenclatura y estilo de Java.
+- [x] ***Estructura MVC***
+  - Para asignar responsabilidades en capas.
+- [x] ***Principio de Modularidad***
+  - Designar tareas o responsabilidades en clases y capas.
+- [x] ***Tecnología MAVEN***
+  - Provee soporte no solo para obtener archivos de su repositorio.
+  - También para subir artefactos al repositorio al final de la construcción
+  de la aplicación, dejándola al acceso de todos los usuarios.
+- [x] ***Test con JUnit***
+  - Sirven para comprobar si se cumple una condición sobre el resultado obtenido.
 
 ## ¿En qué consiste la aplicación a desarrollar?
 - Permitirá al usuario realizar operaciones matemáticas básicas como:
