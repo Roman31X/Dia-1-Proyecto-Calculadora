@@ -16,22 +16,22 @@ public class ControladorOpciones {
             case 1 -> {
                 valoresEnteros = valoresABEnteros(consola);
                 var respuestaSuma = operacionesMatematica.suma(valoresEnteros);
-                mensajeRespuesta(opcion,respuestaSuma);
+                mensajeRespuestaEntero(opcion,respuestaSuma);
             }
             case 2 -> {
                 valoresEnteros = valoresABEnteros(consola);
                 var respuestaResta = operacionesMatematica.resta(valoresEnteros);
-                mensajeRespuesta(opcion,respuestaResta);
+                mensajeRespuestaEntero(opcion,respuestaResta);
             }
             case 3 -> {
                 valoresEnteros = valoresABEnteros(consola);
                 var respuestaMultiplicacion = operacionesMatematica.multiplicacion(valoresEnteros);
-                mensajeRespuesta(opcion,respuestaMultiplicacion);
+                mensajeRespuestaEntero(opcion,respuestaMultiplicacion);
             }
             case 4 -> {
                 valoresEnteros = valoresABEnteros(consola);
                 var respuestaDivision = operacionesMatematica.division(valoresEnteros);
-                mensajeRespuesta(opcion, respuestaDivision);
+                mensajeRespuestaEntero(opcion, respuestaDivision);
             }
             case 5 -> {
                 return true;
@@ -48,22 +48,22 @@ public class ControladorOpciones {
             case 1 -> {
                 valoresDecimales = valoresABDecimales(consola);
                 var respuestaSuma = operacionesMatematica.sumaDecimal(valoresDecimales);
-                mensajeRespuesta(opcion,respuestaSuma);
+                mensajeRespuestaDecimal(opcion,respuestaSuma);
             }
             case 2 -> {
                 valoresDecimales = valoresABDecimales(consola);
                 var respuestaResta = operacionesMatematica.restaDecimal(valoresDecimales);
-                mensajeRespuesta(opcion,respuestaResta);
+                mensajeRespuestaDecimal(opcion,respuestaResta);
             }
             case 3 -> {
                 valoresDecimales = valoresABDecimales(consola);
                 var respuestaMultiplicacion = operacionesMatematica.multiplicacionDecimal(valoresDecimales);
-                mensajeRespuesta(opcion,respuestaMultiplicacion);
+                mensajeRespuestaDecimal(opcion,respuestaMultiplicacion);
             }
             case 4 -> {
                 valoresDecimales = valoresABDecimales(consola);
                 var respuestaDivision = operacionesMatematica.divisionDecimal(valoresDecimales);
-                mensajeRespuesta(opcion, respuestaDivision);
+                mensajeRespuestaDecimal(opcion, respuestaDivision);
             }
             case 5 -> {
                 return true;

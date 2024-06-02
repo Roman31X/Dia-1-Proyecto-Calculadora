@@ -13,14 +13,18 @@ public class CalculadoraApp {
         while (!salir){
             try{
                 var opcion = menu(consola);
-                var tipo = opcionEnteroDecimal(consola);
-                if(tipo == 1){
-                    salir = opcionOperacionEntera(opcion, consola);
+                if(opcion == 5){
+                    salir = true;
                 }else{
-                    salir = opcionOperacionDecimal(opcion, consola);
+                    var tipo = opcionEnteroDecimal(consola);
+                    if(tipo == 1){
+                        salir = opcionOperacionEntera(opcion, consola);
+                    }else{
+                        salir = opcionOperacionDecimal(opcion, consola);
+                    }
                 }
             }catch (Exception e){
-                System.out.println("Error al digitar una opción fuera del menú: "+e.getMessage());
+                System.out.println("Error al digitar una opción o valor fuera del menú: "+e.getMessage());
             }
         }
     }

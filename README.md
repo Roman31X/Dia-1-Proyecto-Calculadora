@@ -11,6 +11,10 @@ siguientes puntos:
   - Seguir las convenciones de nomenclatura y estilo de Java.
 - [x] ***Estructura MVC***
   - Para asignar responsabilidades en capas.
+- [x] ***Estilo camelCase***
+  - Estilo de escritura que se aplica a frases o palabras compuestas. 
+  - El nombre se debe a que las mayúsculas a lo largo de una palabra 
+  en CamelCase se asemejan a las jorobas de un camello.
 - [x] ***Principio de Modularidad***
   - Designar tareas o responsabilidades en clases y capas.
 - [x] ***Tecnología MAVEN***
