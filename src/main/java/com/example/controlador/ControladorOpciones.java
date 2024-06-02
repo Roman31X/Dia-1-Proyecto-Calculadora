@@ -10,27 +10,28 @@ public class ControladorOpciones {
 
     protected static CalculoMatematico operacionesMatematica = new CalculoMatematico();
 
-    public static boolean opcionOperacion(int opcion, Scanner consola){
-        List<Integer> valores;
+    public static boolean opcionOperacion(int opcion, int tipo, Scanner consola){
+        List<Integer> valoresEnteros;
+        List<Double> valoresDecimales;
         switch (opcion){
             case 1 -> {
-                valores = valoresAB(consola);
-                var respuestaSuma = operacionesMatematica.suma(valores);
+                valoresEnteros = valoresAB(consola);
+                var respuestaSuma = operacionesMatematica.suma(valoresEnteros);
                 mensajeRespuesta(opcion,respuestaSuma);
             }
             case 2 -> {
-                valores = valoresAB(consola);
-                var respuestaResta = operacionesMatematica.resta(valores);
+                valoresEnteros = valoresAB(consola);
+                var respuestaResta = operacionesMatematica.resta(valoresEnteros);
                 mensajeRespuesta(opcion,respuestaResta);
             }
             case 3 -> {
-                valores = valoresAB(consola);
-                var respuestaMultiplicacion = operacionesMatematica.multiplicacion(valores);
+                valoresEnteros = valoresAB(consola);
+                var respuestaMultiplicacion = operacionesMatematica.multiplicacion(valoresEnteros);
                 mensajeRespuesta(opcion,respuestaMultiplicacion);
             }
             case 4 -> {
-                valores = valoresAB(consola);
-                var respuestaDivision = operacionesMatematica.division(valores);
+                valoresEnteros = valoresAB(consola);
+                var respuestaDivision = operacionesMatematica.division(valoresEnteros);
                 mensajeRespuesta(opcion, respuestaDivision);
             }
             case 5 -> {
