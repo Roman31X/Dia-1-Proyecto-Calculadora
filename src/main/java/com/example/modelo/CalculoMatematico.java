@@ -37,4 +37,24 @@ public class CalculoMatematico implements OperacionesMatematicas{
         }
         return resultado;
     }
+
+    @Override
+    public double sumaDecimal(List<Double> valores) {
+        return 0;
+    }
+
+    @Override
+    public double restaDecimal(List<Double> valores) {
+        return 0;
+    }
+
+    @Override
+    public double multiplicacionDecimal(List<Double> valores) {
+        return 0;
+    }
+
+    @Override
+    public double divisionDecimal(List<Double> valores) {
+        return 0;
+    }
 }

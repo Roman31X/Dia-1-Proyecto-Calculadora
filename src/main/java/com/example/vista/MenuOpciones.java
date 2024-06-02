@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MenuOpciones {
+
     public static int menu(Scanner consola){
         System.out.print("|-------------------------|"+"\n"+
                          "|  Aplicación calculadora |"+"\n"+
@@ -14,6 +15,17 @@ public class MenuOpciones {
                          "|  [3] - MULTIPLICACIÓN   |"+"\n"+
                          "|  [4] - DIVISIÓN         |"+"\n"+
                          "|  [5] - SALIR            |"+"\n"+
+                         "|-------------------------|"+"\n");
+        System.out.print("| Ingrese una opción =>\s");
+        return Integer.parseInt(consola.nextLine());
+    }
+
+    public static int opcionEnteroDecimal(Scanner consola){
+        System.out.print("|-------------------------|"+"\n"+
+                         "| OPCIÓN TIPO OPERADORES  |"+"\n"+
+                         "|-------------------------|"+"\n"+
+                         "|   [1] - ENTEROS         |"+"\n"+
+                         "|   [2] - DECIMALES       |"+"\n"+
                          "|-------------------------|"+"\n");
         System.out.print("| Ingrese una opción =>\s");
         return Integer.parseInt(consola.nextLine());
