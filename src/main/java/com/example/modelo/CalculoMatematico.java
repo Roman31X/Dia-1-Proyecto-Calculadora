@@ -4,10 +4,9 @@ import java.util.List;
 
 public class CalculoMatematico implements OperacionesMatematicas{
 
-    protected int resultado = 0;
-
     @Override
     public  int suma(List<Integer> valores) {
+        int resultado = 0;
         for (int valor : valores) {
             resultado += valor;
         }
@@ -16,30 +15,26 @@ public class CalculoMatematico implements OperacionesMatematicas{
 
     @Override
     public int resta(List<Integer> valores) {
-        for (int valor : valores) {
-            resultado -= valor;
-        }
+        int resultado = 0;
+        resultado = valores.get(0) - valores.get(1);
         return resultado;
     }
 
     @Override
     public int multiplicacion(List<Integer> valores) {
-        for (int valor : valores) {
-            resultado *= valor;
-        }
+        int resultado = 0;
+        resultado = valores.get(0) * valores.get(1);
         return resultado;
     }
 
     @Override
     public int division(List<Integer> valores) {
-        for (int valor : valores) {
-            if(valor != 0){
-                resultado /= valor;
-            }else{
-                System.out.println("No se puede dividir entre [0]");
-                break;
-            }
+        int resultado = 0;
+        if(valores.get(0) != 0){
+            resultado = valores.get(0) / valores.get(1);
+        }else{
+            System.out.println("No se puede dividir entre [0]");
         }
-        return resultado = 0;
+        return resultado;
     }
 }
