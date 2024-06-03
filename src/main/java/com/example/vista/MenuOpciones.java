@@ -55,20 +55,20 @@ public class MenuOpciones {
 
     public static void mensajeRespuestaEntero(int opcion, Integer respuesta){
         switch (opcion){
-            case 1 -> System.out.println("La suma de los valores es: "+respuesta);
-            case 2 -> System.out.println("La resta de los valores es: "+respuesta);
-            case 3 -> System.out.println("La multiplicación de los valores es: "+respuesta);
-            case 4 -> System.out.println("La division de los valores es: "+respuesta);
+            case 1 -> System.out.println("La suma de los valores es: "+respuesta+"\n");
+            case 2 -> System.out.println("La resta de los valores es: "+respuesta+"\n");
+            case 3 -> System.out.println("La multiplicación de los valores es: "+respuesta+"\n");
+            case 4 -> System.out.println("La division de los valores es: "+respuesta+"\n");
             default -> System.out.println("Respuesta fuera de opción");
         }
     }
 
     public static void mensajeRespuestaDecimal(int opcion, Double respuesta){
         switch (opcion){
-            case 1 -> System.out.println("La suma de los valores es: "+respuesta);
-            case 2 -> System.out.println("La resta de los valores es: "+respuesta);
-            case 3 -> System.out.println("La multiplicación de los valores es: "+respuesta);
-            case 4 -> System.out.println("La division de los valores es: "+respuesta);
+            case 1 -> System.out.println("La suma de los valores es: "+respuesta+"\n");
+            case 2 -> System.out.println("La resta de los valores es: "+respuesta+"\n");
+            case 3 -> System.out.println("La multiplicación de los valores es: "+respuesta+"\n");
+            case 4 -> System.out.println("La division de los valores es: "+respuesta+"\n");
             default -> System.out.println("Respuesta fuera de opción");
         }
     }
